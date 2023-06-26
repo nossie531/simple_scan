@@ -23,19 +23,19 @@ shows the case where the same process is implemented with `scan` method.
 <th>Name
 <th>simple version
 <th>scan version
-<tbody>
+<tbody valign="baseline">
 <tr>
-<td style="vertical-align: baseline;">
+<td>
 
 `trace`
 
-<td style="vertical-align: baseline;">
+<td>
 
 ```rust
 (0..10).trace(0, |s, x| s + x)
 ```
 
-<td style="vertical-align: baseline;">
+<td>
 
 ```rust
 (0..10).scan(0, |s, x| {
@@ -45,17 +45,17 @@ shows the case where the same process is implemented with `scan` method.
 ```
 
 <tr>
-<td style="vertical-align: baseline;">
+<td>
 
 `trace2`
 
-<td style="vertical-align: baseline;">
+<td>
 
 ```rust
 (0..10).trace2(0, |s, x| s + x)
 ```
 
-<td style="vertical-align: baseline;">
+<td>
 
 ```rust
 (0..10).scan(0, |s, x| {
@@ -65,17 +65,17 @@ shows the case where the same process is implemented with `scan` method.
 ```
 
 <tr>
-<td style="vertical-align: baseline;">
+<td>
 
 `diff`
 
-<td style="vertical-align: baseline;">
+<td>
 
 ```rust
 (0..10).diff(0, |c, p| c - p)
 ```
 
-<td style="vertical-align: baseline;">
+<td>
 
 ```rust
 (0..10).scan(0, |s, x| {
