@@ -1,4 +1,4 @@
-/// Iterator adapter for state and input tracking.
+/// Iterator adapter for current state and previous state tracking.
 ///
 /// This struct is created by the [`trace2`](crate::IteratorSimpleScanExt::trace2)
 /// method on [`IteratorSimpleScanExt`](crate::IteratorSimpleScanExt). See its

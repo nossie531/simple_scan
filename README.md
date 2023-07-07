@@ -89,5 +89,7 @@ shows the case where the same process is implemented with `scan` method.
 
 ## What's New
 
-Version 0.2 changes `trace2` behavior. In version 0.2, it track previous and
+Version 0.2.1 is update for document fix.
+
+Version 0.2.0 changes `trace2` behavior. In version 0.2, it track previous and
 current state. While in version 0.1, it track current state and current input.
