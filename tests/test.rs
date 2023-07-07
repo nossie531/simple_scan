@@ -47,8 +47,9 @@ fn trace2() {
     fn with_normal() {
         let result = sample_iter().trace2(0, |s, x| s + x);
         let expect = sample_iter().scan(0, |s, x| {
+            let prev = *s;
             *s += x;
-            Some((*s, x))
+            Some((prev, *s))
         });
 
         assert!(result.eq(expect));

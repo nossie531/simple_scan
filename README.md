@@ -59,8 +59,9 @@ shows the case where the same process is implemented with `scan` method.
 
 ```rust
 (0..10).scan(0, |s, x| {
+    let prev = *s;
     *s += x;
-    Some((*s, x))
+    Some((prev, *s))
 });
 ```
 
@@ -85,3 +86,8 @@ shows the case where the same process is implemented with `scan` method.
 ```
 
 </table>
+
+## What's New
+
+Version 0.2 changes `trace2` behavior. In version 0.2, it track previous and
+current state. While in version 0.1, it track current state and current input.
