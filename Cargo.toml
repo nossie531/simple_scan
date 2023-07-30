@@ -1,6 +1,6 @@
 [package]
 name = "simple_scan"
-version = "0.2.1"
+version = "0.2.2"
 authors = ["Nossie531"]
 edition = "2021"
 description = "Iterator extensions for simple scan operation."
