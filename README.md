@@ -89,7 +89,17 @@ shows the case where the same process is implemented with `scan` method.
 
 ## What's New
 
-Version 0.2.1 is update for document fix.
+v0.3.0
 
-Version 0.2.0 changes `trace2` behavior. In version 0.2, it track previous and
-current state. While in version 0.1, it track current state and current input.
+* `must_use` annotations are added at several locations.
+
+v0.2.1
+
+* Document fix.
+
+v0.2.0
+
+* changes `trace2` behavior.
+  
+  In version 0.2, it track previous and current state.  
+  While in version 0.1, it track current state and current input.

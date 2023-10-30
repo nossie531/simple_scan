@@ -1,18 +1,18 @@
 use crate::{Diff, Trace, Trace2};
 
-/// Extension Trait of [Iterator] for simple scan operations.
+/// Extension Trait of [`Iterator`] for simple scan operations.
 ///
-/// Provides more simplified versions of the [scan](Iterator::scan) method.
+/// Provides more simplified versions of the [`scan`](Iterator::scan) method.
 /// They are not as flexible as `scan`, but allows for shorter code in
 /// certain cases.
 pub trait IteratorSimpleScanExt: Iterator {
-    /// Simplified version of the [scan](Iterator::scan) method.
+    /// Simplified version of the [`scan`](Iterator::scan) method.
     /// The process is focused solely on internal state tracking.
     ///
     /// The following is what differs from `scan`.
     ///
     /// * Iteration cannot be interrupted.
-    /// * Internal state needs to be [Clone].
+    /// * Internal state needs to be [`Clone`].
     /// * Output items can only be the same type of the internal state.
     /// * Internal state updates can be done with argument and return value
     ///   conversions instead of mutable reference.
@@ -38,7 +38,7 @@ pub trait IteratorSimpleScanExt: Iterator {
         Trace::new(self, state, f)
     }
 
-    /// An advanced version of the [trace](Self::trace) method.
+    /// An advanced version of the [`trace`](Self::trace) method.
     /// The resulting iterator tracks current state with previous state.
     ///
     /// The items in the result iterators are tuple, with the first element
@@ -74,10 +74,10 @@ pub trait IteratorSimpleScanExt: Iterator {
     /// # Arguments
     ///
     /// * `ini` -
-    ///     Alternate value of the previous element used only in the first iteration.
+    ///   Alternate value of the previous element used only in the first iteration.
     /// * `f` -
-    ///     Difference processing. The first argument is the current input item and
-    ///     the second argument is the previous input item.
+    ///   Difference processing. The first argument is the current input item and
+    ///   the second argument is the previous input item.
     ///
     /// # Examples
     ///

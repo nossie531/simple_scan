@@ -1,3 +1,4 @@
+use crate::msg;
 use core::{marker::PhantomData, mem};
 
 /// Iterator adapter for item diff tracking.
@@ -5,6 +6,7 @@ use core::{marker::PhantomData, mem};
 /// This struct is created by the [`diff`](crate::IteratorSimpleScanExt::diff)
 /// method on [`IteratorSimpleScanExt`](crate::IteratorSimpleScanExt). See its
 /// documentation for more.
+#[must_use = msg::iter_must_use!()]
 #[derive(Clone)]
 pub struct Diff<I: Iterator, F, D> {
     iter: I,

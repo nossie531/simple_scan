@@ -8,6 +8,7 @@
 
 mod diff;
 mod iterator_simple_scan_ext;
+mod msg;
 mod trace;
 mod trace2;
 

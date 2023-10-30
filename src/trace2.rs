@@ -1,8 +1,11 @@
+use crate::msg;
+
 /// Iterator adapter for current state and previous state tracking.
 ///
 /// This struct is created by the [`trace2`](crate::IteratorSimpleScanExt::trace2)
 /// method on [`IteratorSimpleScanExt`](crate::IteratorSimpleScanExt). See its
 /// documentation for more.
+#[must_use = msg::iter_must_use!()]
 #[derive(Clone)]
 pub struct Trace2<I, St, F> {
     iter: I,
