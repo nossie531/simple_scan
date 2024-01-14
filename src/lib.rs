@@ -12,7 +12,7 @@ mod msg;
 mod trace;
 mod trace2;
 
-pub use diff::Diff;
-pub use iterator_simple_scan_ext::IteratorSimpleScanExt;
-pub use trace::Trace;
-pub use trace2::Trace2;
+pub use diff::*;
+pub use iterator_simple_scan_ext::*;
+pub use trace::*;
+pub use trace2::*;
