@@ -1,3 +1,5 @@
+//! Provider of [`IteratorSimpleScanExt`].
+
 use crate::{Diff, Trace, Trace2};
 
 /// Extension Trait of [`Iterator`] for simple scan operations.

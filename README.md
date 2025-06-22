@@ -1,7 +1,7 @@
 simple_scan
 ===
 
-`Iterator` extension trait for simple scan.
+`Iterator` extensions for simple scan operation.
 
 *The author of this crate is not good at English.*  
 *Forgive me if the document is hard to read.*
@@ -21,21 +21,15 @@ shows the case where the same process is implemented with `scan` method.
 <thead>
 <tr>
 <th>Name
-<th>simple version
-<th>scan version
+<th>example / equivalent code
 <tbody valign="baseline">
 <tr>
-<td>
-
-`trace`
-
+<td> <code>trace</code>
 <td>
 
 ```rust
 (0..10).trace(0, |s, x| s + x)
 ```
-
-<td>
 
 ```rust
 (0..10).scan(0, |s, x| {
@@ -45,17 +39,12 @@ shows the case where the same process is implemented with `scan` method.
 ```
 
 <tr>
-<td>
-
-`trace2`
-
+<td> <code>trace2</code>
 <td>
 
 ```rust
 (0..10).trace2(0, |s, x| s + x)
 ```
-
-<td>
 
 ```rust
 (0..10).scan(0, |s, x| {
@@ -66,17 +55,13 @@ shows the case where the same process is implemented with `scan` method.
 ```
 
 <tr>
-<td>
-
-`diff`
+<td><code>diff</code>
 
 <td>
 
 ```rust
 (0..10).diff(0, |c, p| c - p)
 ```
-
-<td>
 
 ```rust
 (0..10).scan(0, |s, x| {
@@ -88,6 +73,11 @@ shows the case where the same process is implemented with `scan` method.
 </table>
 
 ## What's New
+
+v0.4.0
+* Rust edition is updated to 2024.
+* Add `prelude` module (Although this crate is very small).
+* Polish documentations.
 
 v0.3.1
 

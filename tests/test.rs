@@ -1,8 +1,6 @@
-use core::mem;
-
-use simple_scan::IteratorSimpleScanExt;
-
 use crate::for_test::*;
+use core::mem;
+use simple_scan::prelude::*;
 
 #[test]
 fn trace() {

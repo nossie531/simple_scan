@@ -1,3 +1,5 @@
+//! Provider of [`Diff`].
+
 use crate::msg;
 use core::{marker::PhantomData, mem};
 

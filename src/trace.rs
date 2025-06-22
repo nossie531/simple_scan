@@ -1,3 +1,5 @@
+//! Provider of [`Trace`].
+
 use crate::msg;
 
 /// Iterator adapter for state tracking.
