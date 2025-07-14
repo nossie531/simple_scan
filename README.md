@@ -72,28 +72,6 @@ shows the case where the same process is implemented with `scan` method.
 
 </table>
 
-## What's New
+## Versions
 
-v0.4.0
-* Rust edition is updated to 2024.
-* Add `prelude` module (Although this crate is very small).
-* Polish documentations.
-
-v0.3.1
-
-* Minor refactoring.
-
-v0.3.0
-
-* `must_use` annotations are added at several locations.
-
-v0.2.1
-
-* Minor refactoring.
-
-v0.2.0
-
-* changes `trace2` behavior.
-  
-  In version 0.2, it track previous and current state.  
-  While in version 0.1, it track current state and current input.
+See [CHANGELOG](CHANGELOG.md).
